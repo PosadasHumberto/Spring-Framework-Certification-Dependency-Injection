@@ -2,6 +2,7 @@ package org.hposadas.dependencyinjection.controllers;
 
 import org.hposadas.dependencyinjection.services.GreetingService2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -16,6 +17,7 @@ public class SetterIngectedControllerWithSpringDI {
 
     //setters
     @Autowired
+    @Qualifier("setterGreetingBean")
     public void setGreetingService2(GreetingService2 greetingService2) {
         this.greetingService2 = greetingService2;
     }
