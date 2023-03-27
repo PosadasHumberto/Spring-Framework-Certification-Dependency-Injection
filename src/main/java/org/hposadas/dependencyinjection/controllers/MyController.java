@@ -2,6 +2,9 @@ package org.hposadas.dependencyinjection.controllers;
 
 import org.springframework.stereotype.Controller;
 
+/**
+ * Controller that is going to be injected manually in Main method and test method
+ */
 @Controller
 public class MyController {
 
