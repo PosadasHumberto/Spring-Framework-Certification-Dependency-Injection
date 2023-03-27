@@ -4,17 +4,24 @@ import org.hposadas.dependencyinjection.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**
- * Controller who's going inject a dependency and to be instanced
- * from a test class using Class properties
+ *Controller who is going to inject a dependency by setter
  */
 @Controller
-public class MyController3 {
+public class MyController4 {
 
     //atributos
-    GreetingService greetingService;
+    private GreetingService greetingService;
 
+    //métodos
     public String sayHello(){
+
         return greetingService.sayGreetings();
     }
+
+    //setters
+    public void setGreetingService(GreetingService greetingService) {
+        this.greetingService = greetingService;
+    }
+
 
 }
