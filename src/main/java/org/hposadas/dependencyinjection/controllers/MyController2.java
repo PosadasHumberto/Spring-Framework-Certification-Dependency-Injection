@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 /**
  * Controller who's going to use a GreetingsSevice instance
  * without using Dependency Injection.
+ * in this case we are using private properties
  */
 @Controller
 public class MyController2 {
