@@ -2,14 +2,13 @@ package org.hposadas.dependencyinjection.controllers;
 
 import org.hposadas.dependencyinjection.services.GreetingService;
 import org.hposadas.dependencyinjection.services.GreetingServiceImpl;
-import org.springframework.stereotype.Controller;
 
 /**
  * Controller who's going to use a GreetingsSevice instance
  * without using Dependency Injection.
  * in this case we are using private properties
  */
-@Controller
+
 public class MyController2 {
 
     //atributos
